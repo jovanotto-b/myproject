@@ -1,0 +1,537 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	overflow: auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-color: #353535;
+}
+
+#canvas {
+
+	width: 100%;
+	height: auto;
+}
+
+.hero_mobile {
+	display: none;
+}
+
+/* PROMOTION + BIKE MODELS SECTION */
+
+.bikeModel-container {
+	background-color: #fff;
+	margin: 40px;
+	padding: 40px;
+}
+
+.title {
+	color: #ece81a;
+	text-align: center;
+	font-size: 40px;
+}
+
+.bikeModel-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.bikeModel {
+	text-align: center;
+	padding: 30px;
+}
+
+.bikeModel h2, .bikeModel p , .bikeModel button {
+	margin-top: 20px;
+}
+
+.bikeModel h2 {
+	margin-top: 20px;
+}
+
+.price {
+	font-size: 27px;
+}
+
+.bikeTxt {
+	font-size: 16px;
+	line-height: 23px;
+}
+
+/* BUTTONS */
+
+button {
+	background-color: #ece81a;
+	border: none;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+button:hover {
+	background-color: #b2af08;
+}
+
+.responsive {
+  	width: 100%;
+  	height: auto;
+}
+
+/* SERVICES */
+
+.services {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px;
+	padding: 40px;
+}
+
+.services-box {
+	background-color: white;
+	flex-basis: 33.3%;
+	margin: 40px;
+	padding: 40px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 23px;
+}
+
+.services-box h3, .services-box p , .services-box button {
+	margin-top: 15px;
+}
+
+/* BIG BANNER */
+.BigBanner {
+	flex: 100%;
+  	max-width: 100%;
+}
+
+.BiigBanner {
+	position: relative;
+}
+
+.textBiigBanner {
+  position: absolute;
+  top: 30%;
+  left: 70px;
+  font-size: 18px;
+}
+
+.textBiigBanner h2, h4 {
+	color: #ece81a; 
+}
+
+.textBiigBanner h2 {
+	font-size: 7vw;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+.textBiigBanner h4 {
+	font-size: 2.10vw;
+}
+
+.textBiigBanner p {
+	color: #fff; 
+	font-size: 1.3vw;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 25px;
+}
+
+#order_button {
+	margin-top: 20px;
+	font-size: 18px;
+}
+
+img { 
+  	width: 100%;
+ 	height: auto;
+}
+
+.bigBanner_mobile {
+	display: none;
+}
+
+.responsive_silentHill {
+	display: none;
+}
+
+/* FOOTER */
+
+.footer {
+	display: flex;
+	color: #fff;
+	justify-content: center;
+	align-items: center;
+}
+
+.footerBox {
+	flex: 1;
+	padding: 40px;
+	text-align: center;
+	line-height: 30px;
+}
+
+#footer_title {
+	font-weight: bold;
+	color: #ece81a;
+	font-size: 20px;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1000px) {
+ 
+  .bike4 {
+  	display: none;
+  }
+
+  .services {
+  	flex-direction: column;	
+}
+
+.textBiigBanner {
+  top: 20%;
+}
+
+.textBiigBanner p {
+	line-height: 20px;
+}
+
+}
+
+
+@media only screen and (max-width: 844px) {
+ .bike3 {
+ 	display: none;
+ }
+
+ .footer {
+ 	flex-direction: column;
+ }
+
+.footerBox {
+	padding: 20px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.services-box {
+	
+	margin: 40px;
+	padding: 40px;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+}
+
+@media only screen and (max-width: 650px) {
+.bike2 {
+ 	display: none;
+ }
+
+ .bikeModel-content {
+	display: flex;
+	justify-content: center;
+}
+
+.bikeModel h2 {
+	font-size: 40px;
+}
+
+.bike1 h2 {
+	font-size: 30px;
+}
+
+.bike1 p {
+	font-size: 20px;
+} 
+
+.bike1 .price {
+	font-size: 30px;
+}
+
+canvas {
+	display: none !important;
+}
+
+.hero_mobile {
+	display: block;
+}
+
+.services {	
+	margin: 0px;
+	padding: 0px;
+}
+
+.services-box {	
+	margin: 40px;
+	padding: 40px;
+}
+
+.bigBanner_mobile {
+	display: block;
+}
+
+.bigBanner {
+	display: none;
+}
+
+.textBiigBanner {
+  position: absolute;
+  top: 5%;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.textBiigBanner h2 {
+	font-size: 17vw;	
+}
+
+.textBiigBanner h4 {
+	font-size: 5vw;
+}
+
+.textBiigBanner p {
+	font-size: 4vw;
+	line-height: 30px;
+}
+
+#order_button {
+	margin-top: 90%;
+	font-size: 18px;
+}
+
+.responsive_silentHill {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.responsive {
+	display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+/**
+  Hamburger
+**/
+.hamburger {
+  position: absolute;
+  top: 9em;
+  right: 13%;
+  margin-left: -2em;
+  margin-top: -45px;
+  width: 2em;
+  height: 45px;
+  z-index: 5;
+}
+
+.hamburger div {
+  position: relative;
+  width: 3em;
+  height: 7px;
+  border-radius: 3px;
+  background-color: #353535;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+/**
+Nav Styles
+**/
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  top: -100%; left: 0; right: 0; bottom: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+.nav-wrapper {
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+nav {
+  text-align: left;
+  margin-left: 25%;
+  margin-top: 150px;
+}
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #353535;
+  font-size: 40px;
+  display: inline-block;
+  margin-top: 100px;
+  transition: color 0.2s ease-in-out;
+  letter-spacing: 1px;
+}
+nav a:before {
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 0.25em;
+  background-color: white;
+  left: -0.5em;
+  transition: all 0.2s ease-in-out;
+}
+nav a:hover {
+  color: #121212;
+}
+nav a:hover:before {
+  height: 100%;
+}
+
+/* Animations */
+
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+}
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -7px;
+}
+
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}
+
+}
+
+
+@media only screen and (max-width: 500px) {
+.textBiigBanner {
+  width: 70%;
+  margin: auto;
+  font-size: 16px;
+}
+
+.services {
+	padding: 30px 0px;
+}
+.services-box {
+	margin:10px 20px 20px;
+	padding: 20px 10px;
+}
+
+.bikeModel-container {
+	margin: 20px;
+	padding: 20px 10px;
+}
+
+.title {
+	font-size: 30px;
+}
+
+.bikeModel {
+	text-align: center;
+	padding: 30px 10px;
+}
+
+.bikeModel h2, .bikeModel p , .bikeModel button {
+	margin-top: 20px;
+}
+
+.bikeTxt {
+	line-height: 30px;
+}
+
+button {	
+	padding: 15px;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+button:hover {
+	background-color: #b2af08;
+}
+
+#order_button {
+	margin-top: 70%;
+	font-size: 18px;
+}
+
+/* Hamburger */
+
+.hamburger {
+  top: 6em;
+  right: 13%;
+  margin-left: -2em;
+  margin-top: -45px;
+  width: 2em;
+  height: 45px;
+}
+
+.hamburger div { 
+  width: 1.5em;
+  height: 3px;
+  margin-top: 8px;
+}
+
+nav a {
+  font-size: 30px;
+}
+
+}
+
+
+@media only screen and (max-width: 300px) {
+.bike1 h2 {
+	font-size: 23px;
+}
+
+.bikeModel h2 {
+	font-size: 28px;
+	margin-top: 10px;
+}
+
+.bikeModel {
+	text-align: center;
+	padding: 10px;
+}
+
+.bikeModel h2, .bikeModel p , .bikeModel button {
+	margin-top: 15px;
+}
+
+.price {
+	font-size: 25px;
+}
+
+.textBiigBanner {
+  top: 2%;
+  left: 40px;
+  font-size: 18px;
+}
+
+#order_button {
+	margin-top: 2%;
+	font-size: 18px;
+}
+
+button {
+	padding: 8px;
+	font-size: 16px;
+}
+
+}
